@@ -1,1 +1,110 @@
-/* Start Global Rules */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .pricing-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .pricing-section h6 {
+    color: #198754;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-section p {
+    color: #6c757d;
+    margin-bottom: 40px;
+  }
+  
+  .pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 small {
+    font-size: 14px;
+    color: #6c757d;
+  }
+  
+  .card p {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  .card ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .card ul li:before {
+    content: "✔";
+    color: #198754;
+    margin-right: 8px;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #333;
+  }
+  
