@@ -5,7 +5,18 @@
 }
 /* End Define The Color */
 
-
+header {
+    background-color: var(--green-color);
+    height: 80px;
+    width: 100%;
+    padding: 10px;
+}
+header img {
+    width: 130px;
+}
+header ul.links li {
+    color: white;
+}
 
 
 
