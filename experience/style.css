@@ -1,0 +1,47 @@
+/* Custom styles for the experience page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#timeline {
+    margin-top: 50px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    border-left: 4px solid #4CAF50;
+}
+
+.timeline-icon {
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+}
+
+.timeline-content {
+    padding-left: 30px;
+}
+
+#testimonials .card {
+    border: none;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#testimonials .card-body {
+    text-align: center;
+}
+
+
