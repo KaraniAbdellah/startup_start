@@ -1,1 +1,50 @@
 /* this a global Rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Start Buttons */
+
+.main_btn {
+    color: white;
+    background-color: #444;
+    width: 170px;
+    height: 48px;
+    transition: 0.3s;
+}
+.main_btn:hover {
+    background-color: #333;
+}
+
+/* End Buttons */
+
+
+
+
