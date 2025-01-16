@@ -2,7 +2,7 @@
 :root {
     --green-color: #74c69d;
     --transition: 0.3s;
-    --white-color: #f4f4f4;
+    --white-color: hwb(0 96% 4%);
     --border-radius: 5px;
 }
 /* End Define The Color */
