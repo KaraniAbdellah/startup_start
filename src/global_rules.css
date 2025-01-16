@@ -40,9 +40,6 @@ ul {
     border-radius: 10px;
     width: 120px;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
 }
 .main_btn:hover {
@@ -76,6 +73,15 @@ ul {
 }
 /* End Main Classes */
 
+
+/* Start Define Roots */
+:root {
+    --green-color: #74c69d;
+    --transition: 0.3s;
+    --white-color: #f4f4f4;
+    --border-radius: 5px;
+}
+/* End Define Roots */
 
 
 /* Start Header */
