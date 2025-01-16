@@ -176,6 +176,7 @@ footer {
     height: 80px;
     background-color: var(--green-color);
     padding: 20px;
+    border-top: 2px solid var(--white-color);
 }
 footer ul.social_media li {
     transition: var(--transition);
@@ -194,5 +195,30 @@ footer ul.social_media li a, footer p.copy_right {
 
 
 
+/* Start Partners */
+.partners {
+    text-align: center;
+    margin-top: 50px !important;
+}
+.partners h2 {
+    color: var(--green-color);
+    font-size: 15px;
+}
+.partners .title {
+    font-size: 40px;
+}
+.partners .partners_images {
+    margin: 50px 0;
+} 
+.partners .partners_images img {
+    width: 120px;
+}
+.partners .partners_images img:not(:last-child) {
+    margin-left: 20px;
+}
+.partners p.main_btn {
+    margin: 20px auto;
+}
+/* End Partners */
 
 
