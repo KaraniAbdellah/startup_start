@@ -3,6 +3,7 @@
     --green-color: #74c69d;
     --transition: 0.3s;
     --white-color: #f4f4f4;
+    --border-radius: 5px;
 }
 /* End Define The Color */
 
@@ -68,7 +69,6 @@ header p i {
 
 @media (max-width: 767px) {
     header {
-        position: relative;
         display: block;
         padding: 20px !important;
     }
@@ -112,7 +112,7 @@ section.content {
     padding: 30px 1px;
 }
 section.content .page_info {
-    margin: 150px 60px 0 60px;
+    margin-top: 150px;
 }
 section.content .info {
     width: 40%;
@@ -121,11 +121,6 @@ section.content .info .welcome {
     color: var(--white-color);
     font-size: 25px;
     letter-spacing: 5px;
-}
-section.content .info .title {
-    margin: 5px 0 !important;
-    font-size: 40px;
-    color: var(--white-color);
 }
 section.content .info .description {
     color: var(--white-color);
@@ -142,7 +137,6 @@ section.content .image img {
     section.content  .page_info {
         height: 100%;
         flex-direction: column;
-        margin: 80px 20px 0 20px;
     }
     section.content .image {
         order: 1;
@@ -164,10 +158,158 @@ section .image img {
     width: 100%;
 }
 
-
-
-
 /* End Section */
+
+
+
+
+/* Start Partners */
+.partners {
+    text-align: center;
+}
+.partners h2 {
+    color: var(--green-color);
+    font-size: 15px;
+}
+.partners .title {
+    font-size: 40px;
+}
+.partners .partners_images {
+    margin: 50px 0;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+} 
+.partners .partners_images img {
+    width: 120px;
+}
+.partners p.main_btn {
+    margin: 20px auto;
+}
+@media (max-width: 992px) {
+    .partners {
+        overflow: hidden;
+    }
+}
+/* End Partners */
+
+
+/* Start Messages */
+section.messages {
+
+}
+section.messages .image {
+    width: 40%;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+section.messages .image img {
+}
+section.messages .info {
+    width: 60%;
+}
+
+@media (max-width: 992px) {
+    section.messages {
+        flex-direction: column;
+    }
+    section.messages .image {
+        width: 100%;
+        margin-right: 0px;
+    }
+    section.messages .info {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* End Messages */
+
+
+
+/* Start Settings */
+section.settings {
+
+}
+section.settings .image {
+    width: 40%;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+section.settings .image img {
+}
+section.settings .info {
+    width: 60%;
+}
+
+@media (max-width: 992px) {
+    section.settings {
+        flex-direction: column;
+    }
+    section.settings .image {
+        width: 100%;
+        margin-left: 0px;
+        order: 1;
+    }
+    section.settings .info {
+        width: 100%;
+        text-align: left;
+        order: 2;
+    }
+}
+
+/* End Settings */
+
+
+/* Start Tlents */
+section.talents {
+    text-align: center;
+}
+section.talents h2 {
+    color: var(--green-color);
+    font-size: 15px;
+}
+section.talents .title {
+    font-size: 40px;
+}
+section.talents .person_talents {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+section.talents .person_talents .talent {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: var(--transition);
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+section.talents .person_talents .talent img {
+    margin-bottom: 30px;
+    width: 200px;
+}
+section.talents button.main_btn {
+    margin: 40px auto;
+}
+
+@media (max-width: 767px) {
+    section.talents .person_talents {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+@media (max-width: 992px) {
+    section.talents .person_talents {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+/* Start Tlents */
+
+
 
 
 
@@ -192,33 +334,5 @@ footer ul.social_media li a, footer p.copy_right {
     font-size: 18px;
 }
 /* End Footer */
-
-
-
-/* Start Partners */
-.partners {
-    text-align: center;
-    margin-top: 50px !important;
-}
-.partners h2 {
-    color: var(--green-color);
-    font-size: 15px;
-}
-.partners .title {
-    font-size: 40px;
-}
-.partners .partners_images {
-    margin: 50px 0;
-} 
-.partners .partners_images img {
-    width: 120px;
-}
-.partners .partners_images img:not(:last-child) {
-    margin-left: 20px;
-}
-.partners p.main_btn {
-    margin: 20px auto;
-}
-/* End Partners */
 
 
