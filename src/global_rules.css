@@ -17,6 +17,7 @@ a {
     color: inherit;
 }
 
+
 button {
     border: none;
     background-color: #007bff;
@@ -35,15 +36,26 @@ ul {
 .main_btn {
     color: white;
     background-color: #444;
-    width: 170px;
-    height: 48px;
     transition: 0.3s;
+    border-radius: 10px;
 }
 .main_btn:hover {
-    background-color: #333;
+    background-color: #282828;
+    transform: scale(1.1);
 }
 /* End Buttons */
 
+
+/* Start Main Classes */
+.container {
+    margin: 0 60px !important;
+}
+@media (max-width: 992px) {
+    .container {
+        margin: 0 20px !important;
+    }
+}
+/* End Main Classes */
 
 
 
