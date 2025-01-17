@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "gsap": "^3.12.7",
-    "type": "module"
-  }
-}
