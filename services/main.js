@@ -8,8 +8,20 @@ $(document).ready(function () {
         // Bascule de l'état actuel
         $(this).toggleClass('open').next('.answer').slideToggle();
     });
-});
-$(document).ready(function () {
+    // Custom the Navbar
+    let navbar = $(".my_navbar");
+    let links = $("ul.links");
+    navbar.click(function () {
+        links.toggleClass("show");
+        if (links.hasClass("show")) {
+            navbar.html(<i class="fa-solid fa-xmark fs-3"></i>);
+        } else {
+            navbar.html(<i class="fa-solid fa-bars fs-3"></i>);
+        }
+    });
+
+    // Custom the Date [year]
+    let today_year = $("span.date").text(new Date().getFullYear());
     // Fade-in animations for the header
     $(".pricing").hide().fadeIn(2000);
     $(".main-content h2").hide().fadeIn(1500);
