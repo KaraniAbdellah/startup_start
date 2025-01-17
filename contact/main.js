@@ -16,4 +16,3 @@ $(document).ready(function () {
 
     // Custom the Date [year]
     let today_year = $("span.date").text(new Date().getFullYear());
-});
