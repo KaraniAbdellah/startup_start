@@ -54,6 +54,13 @@ $(document).ready(function () {
         { opacity: 1, scale: 1, y: 0, duration: 0.8}
     );
 
+    // Fix The Nav Item
+    $(".nav_item").on("click", function() {
+        $("html, body").animate({
+            scrollTop: $("h2#partners").offset().top - 100
+        }, 100);
+    });
+
 
 });
 
