@@ -1,5 +1,34 @@
 /* Start Learning GSAP */
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes {
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.code-box {
+    background-color: #7e7e7e;
+    color: white;
+    font-weight: bold;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
