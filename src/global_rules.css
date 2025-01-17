@@ -39,7 +39,7 @@ ul {
     transition: 0.3s;
     border-radius: 10px;
     width: 120px;
-    height: 50px;
+    height: 40px;
     cursor: pointer;
 }
 .main_btn:hover {
@@ -87,10 +87,10 @@ ul {
 /* Start Header */
 header {
     background-color: var(--green-color);
-    height: 80px;
+    height: 60px;
     width: 100%;
     padding: 10px 50px;
-    border-bottom: 2px solid var(--white-color);
+    border-bottom: 5px solid var(--white-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -158,7 +158,7 @@ header p i {
     header ul.show.links {
         display: block !important;
         position: absolute;
-        top: 80px;
+        top: 60px;
         left: 0;
         text-align: center;
         background-color: #74c69d;

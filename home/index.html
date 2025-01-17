@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
 
@@ -21,6 +21,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+    <!-- Include GSAP -->
+     
+
+
   </head>
   <body>
     <header class="d-flex justify-content-between align-items-center">
@@ -38,6 +43,7 @@
         <button class="fw-normal main_btn">Get Product</button>
       </ul>
       <p class="m-0 my_navbar p-0"><i class="fa-solid fa-bars fs-3"></i></p>
+        <div class="progress-bar"></div>
     </header>
 
     <section class="content">
@@ -52,7 +58,10 @@
             </p>
           <button class="main_btn">Explore</button>
         </div>
-        <div class="image"><img src="home_images/image.png" alt="" /></div>
+        <!-- <div class="image"><img src="home_images/image.png" alt="" /></div> -->
+        <div class="image">
+            <img src="home_images/image.png"></img>
+        </div>
       </div>
     </section>
 
@@ -153,6 +162,11 @@
             © Start, <span class="date"></span>. All rights reserved.
         </p>
     </footer>
+
+
+    <!-- Include CDN for GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <script src="../src/jquery-3.7.1.min.js"></script>
     <script src="main.js"></script>
