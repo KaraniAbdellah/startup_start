@@ -9,6 +9,7 @@ body {
 
 /* Style pour le pricing */
 .pricing {
+    margin-top: 80px;
     background: linear-gradient(to right, #b4ffda, #81c1a1);
     padding: 20px;
     text-align: center;
@@ -16,7 +17,7 @@ body {
 }
 
 .pricing .breadcrumb h1 {
-    margin: 0;
+    margin: 0; 
     font-size: 2em;
 }
 
@@ -51,6 +52,48 @@ body {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    transform-style: preserve-3d;
+}
+
+
+.card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.2em;
+}
+
+/* Boutons de navigation du carrousel */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(236, 38, 38, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Animation de transition pour les boutons */
+.prev-btn, .next-btn {
+    transition: transform 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    transform: scale(1.2);
 }
 
 @media (max-width: 1024px) {
@@ -69,13 +112,6 @@ body {
 /* Write Here Evryrting */
 
 /* styles.css */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #dbe4d9;
-}
 
 .faq {
     max-width: 800px;
@@ -117,3 +153,4 @@ body {
 .question.open .toggle-icon {
     transform: rotate(180deg);
 }
+
