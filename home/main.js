@@ -17,6 +17,43 @@ $(document).ready(function () {
     // Custom the Date [year]
     let today_year = $("span.date").text(new Date().getFullYear());
 
+    // Start Aniamtion For Section Content
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".progress-header", {
+        width: "100%",
+        scrollTrigger: {
+            trigger: document.body,
+            start: "top top",
+            end: "bottom bottom",
+            scrub: true,
+        },
+    });
+
+    // Aniamtion For Content Page
+    let section_content_info = $(".info");
+    let timeline = gsap.timeline();
+        timeline.fromTo(
+        section_content_info,
+        { opacity: 0, scale: 0.5, x: -200 },
+        { opacity: 1, scale: 1, x: 0, duration: 0.8}
+    );
+
+    let section_content_image = $("section .image");
+    timeline = gsap.timeline();
+        timeline.fromTo(
+        section_content_image,
+        { opacity: 0, scale: 0.5, x: 100 },
+        { opacity: 1, scale: 1, x: 0, duration: 0.8}
+    );
+
+    // let person_talents = $(".person_talents");
+    // timeline = gsap.timeline();
+    //     timeline.fromTo(
+    //     person_talents,
+    //     { opacity: 0, scale: 0.5, y: 100 },
+    //     { opacity: 1, scale: 1, y: 0, duration: 0.8}
+    // );
+
     // Fix The Nav Item
     $(".nav_item").on("click", function() {
         $("html, body").animate({
@@ -33,34 +70,23 @@ $(document).ready(function () {
         });
     });
 
-    // Start Aniamtion For Section Content
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(".progress-header", {
-        width: "100%",
-        scrollTrigger: {
-            trigger: document.body,
-            start: "top top",
-            end: "bottom bottom",
-            scrub: true,
-        },
-    });
-
     // Animate Section [Left-Right]
     gsap.utils.toArray(".leftToRight").forEach((element) => {
         gsap.from(element, {
           x: "-50vh",
           opacity: 0.5,
-          duration: 2,
+          duration: 1,
           ease: "power2.out",
           scrollTrigger: {
               trigger: element,
-              start: "top 90%",
-              end: "top 20%",
+              start: "top 60%",
+              end: "top 120%",
               toggleActions: "play reverse play reverse",
               scrub: 1
           }
         });
     });
+
 
     // Animate Section [Bottom-Top]
     gsap.utils.toArray(".bottomToTop").forEach((element) => {
@@ -78,6 +104,12 @@ $(document).ready(function () {
           }
         });
       });
+    
+
+    
+    
+
+
 
 });
 
