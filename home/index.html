@@ -40,15 +40,15 @@
         <li class="fw-normal">Services</li>
         <li class="fw-normal">Experience</li>
         <li class="fw-normal">Contact</li>
-        <button class="fw-normal main_btn">Get Product</button>
+        <button class="fw-normal main_btn">Products</button>
       </ul>
       <p class="m-0 my_navbar p-0"><i class="fa-solid fa-bars fs-3"></i></p>
-        <div class="progress-bar"></div>
+        <div class="progress-header"></div>
     </header>
 
     <section class="content">
       <div class="page_info container  d-flex justify-content-between align-items-center">
-        <div class="info">
+        <div class="info leftToRight">
             <p class="m-0 p-0 welcome">Welcome</p>
             <p class="m-0 p-0 title">Your Portfolio, Here!!!</p>
             <p class="m-0 p-0 description">
@@ -59,7 +59,7 @@
           <button class="main_btn">Explore</button>
         </div>
         <!-- <div class="image"><img src="home_images/image.png" alt="" /></div> -->
-        <div class="image">
+        <div class="image leftToRight">
             <img src="home_images/image.png"></img>
         </div>
       </div>
@@ -76,17 +76,26 @@
                 adipisicing elit.
             </p>
         </div>
-        <div class="partners_images">
-            <img src="home_images/airbnb.png" alt="">
-            <img src="home_images/google.png" alt="">
-            <img src="home_images/facebook.png" alt="">
-            <img src="home_images/micrsoft.png" alt="">
-            <img src="home_images/spotify.png" alt="">
+        <div class="logos">
+            <ul class="partners_images">
+                <img src="home_images/airbnb.png" alt="">
+                <img src="home_images/google.png" alt="">
+                <img src="home_images/facebook.png" alt="">
+                <img src="home_images/micrsoft.png" alt="">
+                <img src="home_images/spotify.png" alt="">
+            </ul>
+            <ul class="partners_images">
+                <img src="home_images/airbnb.png" alt="">
+                <img src="home_images/google.png" alt="">
+                <img src="home_images/facebook.png" alt="">
+                <img src="home_images/micrsoft.png" alt="">
+                <img src="home_images/spotify.png" alt="">
+            </ul>
         </div>
         <button class="fw-normal main_btn">Learn More</button>
     </section>
 
-    <section class="messages main_section container d-flex justify-content-between align-items-center">
+    <section class="leftToRight messages main_section container d-flex justify-content-between align-items-center">
         <div class="image">
             <img src="home_images/img1.png" alt="">
         </div>
@@ -101,7 +110,7 @@
         </div>
     </section>
 
-    <section class="settings main_section container d-flex justify-content-between align-items-center">
+    <section class="leftToRight settings main_section container d-flex justify-content-between align-items-center">
         <div class="info">
             <p class="title">Lorem ipsum dolor sit amet consectetur</p>
             <p class="description">
@@ -125,28 +134,38 @@
             </p>
         </div>
         <div class="person_talents">
-            <div class="talent">
+            <div class="talent bottomToTop">
                 <img src="home_images/talent1.png" alt="">
-                <h3 class="name">Abdellah Karani</h3>
-                <p class="description_talent">Co-Founder of @Start</p>
+                <h5 class="name my-0">Abdellah Karani</h5>
+                <small class="description_talent">Co-Founder of @Start</small>
             </div>
-            <div class="talent">
+            <div class="talent bottomToTop">
                 <img src="home_images/talent2.png" alt="">
-                <h3 class="name">Abdellah Karani</h3>
-                <p class="description_talent">Co-Founder of @Start</p>
+                <h5 class="name my-0">Abdellah Karani</h5>
+                <small class="description_talent">Co-Founder of @Start</small>
             </div>
-            <div class="talent">
+            <div class="talent bottomToTop">
                 <img src="home_images/talent3.png" alt="">
-                <h3 class="name">Abdellah Karani</h3>
-                <p class="description_talent">Co-Founder of @Start</p>
+                <h5 class="name my-0">Abdellah Karani</h5>
+                <small class="description_talent">Co-Founder of @Start</small>
             </div>
-            <div class="talent">
+            <div class="talent bottomToTop">
                 <img src="home_images/talent4.png" alt="">
-                <h3 class="name">Abdellah Karani</h3>
-                <p class="description_talent">Co-Founder of @Start</p>
+                <h5 class="name my-0">Abdellah Karani</h5>
+                <small class="description_talent">Co-Founder of @Start</small>
+            </div>
+            <div class="talent hidden_talent">
+                <img src="home_images/talent3.png" alt="">
+                <h5 class="name my-0">Abdellah Karani</h5>
+                <small class="description_talent">Co-Founder of @Start</small>
+            </div>
+            <div class="talent hidden_talent">
+                <img src="home_images/talent4.png" alt="">
+                <h5 class="name my-0">Abdellah Karani</h5>
+                <small class="description_talent">Co-Founder of @Start</small>
             </div>
         </div>
-        <button class="main_btn">Learn More</button>
+        <button class="main_btn load_more_talent">Load More</button>
 
 
         
@@ -163,6 +182,7 @@
             © Start, <span class="date"></span>. All rights reserved.
         </p>
     </footer>
+
 
 
     <!-- Include CDN for GSAP -->

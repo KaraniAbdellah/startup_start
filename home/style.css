@@ -117,16 +117,32 @@ section .nav_item img {
 .partners .title {
     font-size: 40px;
 }
-.partners .partners_images {
+.partners .logos {
     margin: 50px 0;
-    display: grid;
+    /* display: inline-block; */
     gap: 10px;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(5, 1fr);
-} 
+    overflow: hidden;
+    user-select: none;
+    white-space: nowrap;
+}
+.partners .partners_images  {
+    display: inline-block;
+    animation: scroll-horizontal 10s linear infinite;
+}
 .partners .partners_images img {
     width: 120px;
+    margin-left: 100px;
+}
+.partners .partners_images:hover img {
+    animation-play-state: paused;
+}
+@keyframes scroll-horizontal {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 .partners p.main_btn {
     margin: 20px auto;
@@ -220,7 +236,7 @@ section.talents .title {
 section.talents .person_talents {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 section.talents .person_talents .talent {
@@ -229,9 +245,17 @@ section.talents .person_talents .talent {
     padding: 20px 10px;
     border-radius: 5px;
 }
+section.talents .hidden_talent {
+    display: none;
+}
+section.talents .hidden_load_more_talent {
+    display: none !important;
+}
 section.talents .person_talents .talent img {
     margin-bottom: 30px;
-    width: 200px;
+    width: 100px;
+} section.talents .person_talents .talent .description_talent {
+    color: var(--green-color);
 }
 section.talents button.main_btn {
     margin: 40px auto;
