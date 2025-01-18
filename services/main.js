@@ -39,4 +39,18 @@ $(document).ready(function () {
         }
     });
 
+    
+    // Start Aniamtion For Section Content
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".progress-header", {
+        width: "100%",
+        scrollTrigger: {
+            trigger: document.body,
+            start: "top top",
+            end: "bottom bottom",
+            scrub: true,
+        },
+    });
+
+
 });
