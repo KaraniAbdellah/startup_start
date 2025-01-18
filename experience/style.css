@@ -152,9 +152,6 @@ header p i {
         margin-bottom: 10px;
     }
 }
-/* End Header */
-
-
 
 /* Start Footer */
 footer {
@@ -227,7 +224,7 @@ a {
 
 #hero .box {
     background: linear-gradient(135deg, #11e783, #085624);
-    animation: flip 5s infinite alternate ease-in-out;
+    animation: flip 5s ease-in-out;
     transform-style: preserve-3d;
     border-radius: 5px;
 }
