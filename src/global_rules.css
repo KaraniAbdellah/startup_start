@@ -97,6 +97,14 @@ header {
     right: 0;
     z-index: 1000;
 }
+.progress-bar {
+    width: 0;
+    height: 5px;
+    background: var(--dark-color);
+    position: fixed;
+    top: 55px;
+    left: 0;
+}
 header .image {
     cursor: pointer;
 }

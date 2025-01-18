@@ -49,7 +49,7 @@ $(document).ready(function () {
     let person_talents = $(".person_talents");
     timeline = gsap.timeline();
         timeline.fromTo(
-            person_talents,
+        person_talents,
         { opacity: 0, scale: 0.5, y: 100 },
         { opacity: 1, scale: 1, y: 0, duration: 0.8}
     );
