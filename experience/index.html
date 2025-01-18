@@ -11,11 +11,13 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 
 
     <!-- Style FIle -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../src/bootstrap.css">
+    <link rel="stylesheet" href="../src/global_rules.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
@@ -112,38 +114,53 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2 data-aos="fade-right">What Our Clients Say</h2>
-        <div class="row">
-            <div class="col-md-4" data-aos="flip-left">
-                <div class="card">
-                    <div class="card-img-top" style="background-image: url('experience_images/client 1.jpg');"></div>
-                    <div class="card-body">
-                        <h5>Katy</h5>
-                        <p>"Fantastic work, the team exceeded all expectations!"</p>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client's Feedback</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  </style>
+</head>
+<body>
+    <section class="feedback-section">
+       
+            <h2>Client's Feedback About Us</h2>
+            <div class="row">
+                <!-- Client Cards Wrapper (Scrollable) -->
+                <div class="client-cards-wrapper">
+                    <!-- First Card -->
+                    <div class="col-md-6 mb-4 client-card">
+                        <div class="card p-4">
+                            <div class="d-flex align-items-center">
+                                <img src="experience_images/client 1.jpg" alt="Client Image" style="width: 50px; height: auto;">
+                                <div class="ms-3">
+                                    <h5 class="card-title mb-0">Harriet Maxwell</h5>
+                                    <p class="card-subtitle">CEO at Google</p>
+                                </div>
+                            </div>
+                            <p class="mt-3">"An excellent experience from start to finish. Their professionalism and dedication exceeded our expectations!"</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
-                <div class="card">
-                    <div class="card-img-top" style="background-image: url('experience_images/client 2.jpg');"></div>
-                    <div class="card-body">
-                        <h5>Lucy</h5>
-                        <p>"Amazing collaboration, the results were beyond our expectations!"</p>
+                    <!-- Second Card -->
+                    <div class="col-md-6 mb-4 client-card">
+                        <div class="card p-4">
+                            <div class="d-flex align-items-center">
+                                <img src="experience_images/client 2.jpg" alt="Client Image" style="width: 50px; height: auto;">
+                                <div class="ms-3">
+                                    <h5 class="card-title mb-0">Carolyn Craig</h5>
+                                    <p class="card-subtitle">CEO at Facebook</p>
+                                </div>
+                            </div>
+                            <p class="mt-3">"An outstanding partnership from beginning to end. Their expertise and commitment truly went above and beyond what we anticipated!"</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
-                <div class="card">
-                    <div class="card-img-top" style="background-image: url('experience_images/client 3.png');"></div>
-                    <div class="card-body">
-                        <h5>Julia</h5>
-                        <p>"Highly professional, would work with them again anytime!"</p>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
+</body>
+</html>
+
 
     <!-- Projects Section -->
     <section id="projects">
@@ -195,17 +212,12 @@
         </p>
     </footer>
 
-
-
-
-
     <!-- Scripts -->
     <script src="../src/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="../src/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../src/jquery-3.7.1.min.js"></script>
     <script src="main.js"></script>
 
 
