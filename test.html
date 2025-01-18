@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <style>
+        .cards  {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            gap: 100px;
+        }
+        body {
+            height: 20000px;
+        }
+        .card {
+            background-color: red;
+            width: 300px;
+            height: 500px;
+        }
+
+        .progrees-bar {
+            position: fixed;
+            background-color: red;
+            width: 0%;
+            height: 10px;
+            top: 0;
+            left: 0;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <!-- <div class="cards">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card card3"></div>
+    </div> -->
+
+    <div class="progrees-bar"></div>
+    
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script>
+
+        // Tweens [fromTo, from, to]
+        // gsap.fromTo(".card",
+        // {
+        //     opacity: 0.8,
+        //     y: 300,
+        //     x: 10,
+        // }, {
+        //     opacity: 1,
+        //     y: 0,
+        //     x: 0,
+        //     duration: 3
+        // });
+
+        // gsap.from(".card3", {
+        //     x: 300,
+        //     duration: 3
+        // });
+
+        // gsap.to(".card3", {
+        //     x: 300,
+        //     duration: 20
+        // });
+
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to('.progrees-bar', {
+            scrollTrigger: {
+            trigger: 'body',          // Trigger based on scrolling of the entire page
+            start: 'top top',         // Start when the top of the page is at the top of the viewport
+            end: 'bottom bottom',     // End when the bottom of the page is at the bottom of the viewport
+            scrub: true               // Smooth scrolling effect
+        },
+        width: '100%'               // Animate the progress bar width to 100%
+        });
+
+        
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

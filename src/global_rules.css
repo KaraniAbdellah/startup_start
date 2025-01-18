@@ -40,6 +40,7 @@ ul {
     border-radius: 10px;
     width: 120px;
     height: 50px;
+    height: 45px;
     cursor: pointer;
 }
 .main_btn:hover {
@@ -80,6 +81,7 @@ ul {
     --transition: 0.3s;
     --white-color: #f4f4f4;
     --border-radius: 5px;
+    --dark-color: #444;
 }
 /* End Define Roots */
 
@@ -91,11 +93,23 @@ header {
     width: 100%;
     padding: 10px 50px;
     border-bottom: 2px solid var(--white-color);
+    height: 65px;
+    width: 100%;
+    padding: 10px 50px;
+    border-bottom: 5px solid var(--white-color);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+}
+.progress-header {
+    width: 0;
+    height: 5px;
+    background: var(--dark-color);
+    position: fixed;
+    top: 60px;
+    left: 0;
 }
 header .image {
     cursor: pointer;
@@ -159,6 +173,7 @@ header p i {
         display: block !important;
         position: absolute;
         top: 80px;
+        top: 60px;
         left: 0;
         text-align: center;
         background-color: #74c69d;
@@ -183,6 +198,7 @@ header p i {
 /* Start Footer */
 footer {
     height: 80px;
+    height: 50px;
     background-color: var(--green-color);
     padding: 20px;
     border-top: 2px solid var(--white-color);
