@@ -3,6 +3,7 @@
 
 $(document).ready(function () {
 
+    
     // Custom the Navbar
     let navbar = $(".my_navbar");
     let links = $("ul.links");
