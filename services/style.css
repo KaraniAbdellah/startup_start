@@ -1,0 +1,156 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4F4f4;
+    color: #333333;
+}
+
+/* Style pour le pricing */
+.pricing {
+    margin-top: 6gi0px;
+    background: linear-gradient(to right, #b4ffda, #81c1a1);
+    padding: 20px;
+    text-align: center;
+    height: 200px;
+}
+
+.pricing .breadcrumb h1 {
+    margin: 0; 
+    font-size: 2em;
+}
+
+.pricing .breadcrumb p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    opacity: 0.8;
+}
+
+/* Style pour le main */
+.main-content {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.main-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #040405;
+}
+
+/* Start Pricing */
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.pricing-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+
+
+.card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.2em;
+}
+
+/* Boutons de navigation du carrousel */
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(236, 38, 38, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Animation de transition pour les boutons */
+.prev-btn, .next-btn {
+    transition: transform 0.3s ease;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+    .pricing-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .pricing-cards {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
+
+
+/* Write Here Evryrting */
+
+/* styles.css */
+
+.faq {
+    max-width: 800px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(211, 204, 204, 0.1);
+    padding: 20px;
+}
+
+.question-answer {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question h3 {
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+}
+
+.answer {
+    display: none;
+    padding: 10px 0;
+    color: #81c1a1;
+    font-size: 16px;
+}
+
+.toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.question.open .toggle-icon {
+    transform: rotate(180deg);
+}
+
