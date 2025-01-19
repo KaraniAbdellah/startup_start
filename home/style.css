@@ -4,7 +4,8 @@
     --transition: 0.3s;
     --white-color: #f5f5f5;
     --dark-color: #444;
-    --border-radius: 5px;
+    --border-radius: 3px;
+    --main-color: #8490ff;
 }
 /* End Define The Color */
 
@@ -25,21 +26,22 @@ section.content .info {
 }
 section.content .info .input {
     background-color: white;
-    padding: 10px 0;
     border-radius: var(--border-radius);
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    background-color: var(--main-color);
+    padding: 5px;
 }
 section.content .info .email {
     width: 100%;
     height: 45px;
     outline: none;
-    border: 0;
 }
 section.content .info .input input  {
-    width: 75% !important;
+    /* width: 75% !important; */
     padding: 10px;
-}
-section.content .info .input button {
-    width: 23% !important;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    border: 0;
 }
 section.content .info .welcome {
     color: var(--dark-color);
@@ -243,6 +245,9 @@ section.settings .info {
 /* Start Tlents */
 section.talents {
     text-align: center;
+    background-color: var(--white-color);
+    padding: 40px;
+    margin-bottom: 0 !important;
 }
 section.talents h2 {
     color: var(--green-color);
@@ -259,9 +264,13 @@ section.talents .person_talents {
 }
 section.talents .person_talents .talent {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-radius: var(--transition);
     padding: 20px 10px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
+    background-color: white;
+    transition: var(--transition);
+}
+section.talents .person_talents .talent:hover {
+    transform: scale(1.05) !important;
 }
 section.talents .hidden_talent {
     display: none;

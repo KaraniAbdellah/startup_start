@@ -3,59 +3,49 @@
     --bg-color: #1f242d;
     --second-bg-color:#323946;
     --text-color:#fff;
-    --main-color:#0ef;
     --layer-animation :#352f2f;
+    --main-color: #8490ff;
 }
-
-
 body {
     background: var(--bg-color);
 }
 
-.content {
-    margin-top: 150px !important;
-}
 
-@media (max-width: 992px) {
-    .content {
-        margin-top: 100px !important;
-    }
-    
-}
 
+
+/* Start Cards */
 .card-img-top {
     height: 200px;
     object-fit: cover;
 }
-
 .card-title {
     text-align: center;
     font-weight: bold;
 }
-
 .btn {
     padding: 10px 20px;
     font-size: 16px;
 }
+/* Start Cards */
 
-/* pour la page portfolio */
+/* Start Project */
 
-.portfolio{
+.project{
     background: var(--second-bg-color);
 }
 
-.portfolio h2 {
+.project h2 {
     margin-bottom: 4rem;
 }
 
-.portfolio-container{
+.project-container{
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     align-items: center;
     gap: 10px;
 }
  
-.portfolio-container .portfolio-box {
+.project-container .project-box {
     position: relative;
     border-radius: 5px;
     box-shadow: 0 0 1rem var(--bg-color);
@@ -67,19 +57,19 @@ body {
     display: none !important;
 }
 
-.portfolio-box img{
+.project-box img{
      
     width: 100%;
     transition: .5s ease;
 }
 
 
-.portfolio-box:hover img{
+.project-box:hover img{
    transform: scale(1.1);
 }
 
 
-.portfolio-box .portfolio-layer {
+.project-box .project-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -96,21 +86,21 @@ body {
     transition: .5s ease;
 }
 
-.portfolio-box:hover .portfolio-layer{
+.project-box:hover .project-layer{
     transform: translateY(0);
 }
 
-.portfolio-layer h4 {
+.project-layer h4 {
     font-size: 2rem;
 }
 
-.portfolio-layer p {
+.project-layer p {
     color: #fff;
     font-size: 1rem;
     margin: .2rem 0 1rem;
 }
 
-.portfolio-layer a {
+.project-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +110,7 @@ body {
     border-radius: 50%;
 }
 
-.portfolio-layer a i {
+.project-layer a i {
     font-size: 1rem;
     color: var(--second-bg-color)
 }
@@ -159,13 +149,13 @@ body {
 
   /* 3la wedit les projets li khdemt bach itgado */
 
-    .portfolio-container{
+    .project-container{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width : 617px) {
-    .portfolio-container {
+    .project-container {
         grid-template-columns: 1fr;
     }
 }
