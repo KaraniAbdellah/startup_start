@@ -29,6 +29,7 @@ ul {
     --transition: 0.3s;
     --white-color: white;
     --border-radius: 10px;
+    --border-radius-button: 3px;
     --dark-color: #444;
     /* --main-color: #1172ff; */
     --main-color: #8490ff;
@@ -44,7 +45,7 @@ ul {
     color: white;
     background-color: var(--dark-color);
     transition: 0.3s;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-button);
     box-shadow: inset var(--main-color) 0px 0px 0 1px;
     border: 2px solid var(--main-color);
     z-index: 100;
@@ -71,8 +72,8 @@ ul {
     color: white;
     background-color: var(--dark-color);
     padding: 10px 20px;
-    border-top-right-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius-button);
+    border-bottom-right-radius: var(--border-radius-button);
     transition: var(--transition);
 }
 .main_btn_email:hover {
