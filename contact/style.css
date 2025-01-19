@@ -1,18 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-}
-
+/* Start Global Rules */
 :root {
     --border-radius-button: 3px;
+    --main-color: #8490ff;
 }
+/* End Global Rules */
 
 
+/* Start Contact */
 .contact {
     margin-top: 100px !important;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     width: 100%;
     margin: auto;
     display: grid;
@@ -28,30 +26,41 @@
         height: 500px;
     }
 }
+/* End Contact */
 
+/* Start Maps and Form */
 .maps iframe {
     width: 100%;
     height: 100%;
 }
-
 .form {
     padding: 20px;
     width: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 5px;
 }
 .form h3 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 20px;
     font-size: 40px;
+    color: var(--main-color);
+    font-weight: bold;
 }
 .form input,
 .form textarea {
     width: 100%;
     color: #000;
-    border: 1px solid #bcbcbc;
     border-radius: 5px;
     outline: none;
+    border: 0;
     margin-bottom: 20px;
     padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.form input::placeholder,
+.form textarea::placeholder {
+    color: #333;
 }
 
 .contact-form {
@@ -79,3 +88,5 @@
     font-size: 0.9rem;
     border-radius: 0.4rem;
 }
+
+/* End Maps And From */
