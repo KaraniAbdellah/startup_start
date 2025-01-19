@@ -187,7 +187,7 @@ header p i {
     header ul.show.links {
         display: block !important;
         position: absolute;
-        top: 70px;
+        top: 75px;
         left: 0;
         text-align: center;
         background-color: var(--dark-color);

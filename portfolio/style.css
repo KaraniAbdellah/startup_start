@@ -12,7 +12,6 @@ body {
 
 
 
-
 /* Start Cards */
 .card-img-top {
     height: 200px;
@@ -42,12 +41,12 @@ body {
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
  
 .project-container .project-box {
     position: relative;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
