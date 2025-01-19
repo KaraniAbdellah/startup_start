@@ -7,6 +7,17 @@ body {
     color: #333333;
 }
 
+:root {
+    --transition: 0.3s;
+    --white-color: white;
+    --border-radius: 10px;
+    --dark-color: #444;
+    /* --main-color: #1172ff; */
+    --main-color: #8490ff;
+    
+}
+/* End Global Rules */
+
 /* Style pour le pricing */
 .pricing {
     margin-top: 6gi0px;
@@ -29,9 +40,10 @@ body {
 
 /* Style pour le main */
 .main-content {
-    padding: 40px 20px;
     text-align: center;
     background-color: white;
+    margin-top: 80px;
+    width: 50%;
 }
 
 .main-content h2 {
@@ -39,7 +51,6 @@ body {
     margin-bottom: 10px;
     color: #040405;
 }
-
 /* Start Pricing */
 
 .pricing-cards {
@@ -63,6 +74,14 @@ body {
 
 .card p {
     font-size: 1.2em;
+}
+.card-body button {
+    border: 0;
+    outline: 0;
+    transition: var(--transition);
+}
+.card-body button:hover {
+    background-color: var(--main-color) !important;
 }
 
 /* Boutons de navigation du carrousel */
@@ -109,16 +128,20 @@ body {
 }
 
 
-/* Write Here Evryrting */
+/* Start question_reponse */
+/* section.question_reponse {
+    margin: 0 160px !important;
+} */
+
+/* End question_reponse */
 
 /* styles.css */
 
 .faq {
-    max-width: 800px;
     margin: 50px auto;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(211, 204, 204, 0.1);
-    padding: 20px;
+    padding: 0 60px;
 }
 
 .question-answer {

@@ -47,7 +47,7 @@ ul {
     border-radius: var(--border-radius);
     box-shadow: inset var(--main-color) 0px 0px 0 1px;
     border: 2px solid var(--main-color);
-    z-index: 1000;
+    z-index: 100;
     cursor: pointer;
     padding: 10px 20px;
 }
