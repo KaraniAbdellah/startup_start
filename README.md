@@ -26,8 +26,8 @@
 
 ## How to Start
 ``` bash
-    git clone https://github.com/KaraniAbdellah/startup_start.git
-    cd startup_start
+git clone https://github.com/KaraniAbdellah/startup_start.git
+cd startup_start
 ```
 
 
