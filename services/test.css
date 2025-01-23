@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding:0 ;
+    background-color: white;
+}
+body{
+    height: 100vh;
+}
+.section{
+    border: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    border-width: 20px;
+    color: aqua;
+}
+.content{
+    display:flex;
+    justify-content: center;
+    border: 10px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px;
+    border-width: 20px;
+    height: 100%;
+    box-shadow: 10px;
+}
+.button{
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
